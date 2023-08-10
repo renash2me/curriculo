@@ -1,0 +1,8 @@
+.resumo {
+    padding-top: 2em;
+}
+
+.titulo_sessao {
+    font-size: 30px;
+    color: var(--cor-secundaria);
+}

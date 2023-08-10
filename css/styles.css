@@ -1,5 +1,6 @@
 @import url("./reset.css");
 @import url("./cabecalho.css");
+@import url("./resumo.css");
 
 :root {
     --fonte-principal: 'Noto Serif', serif;
@@ -14,7 +15,7 @@
 body {
     font-family: var(--fonte-principal);
     color: var(--cor-principal);
-    font-size: 16px;
+    font-size: 12px;
     background-color: azure;
 }
 
@@ -23,6 +24,15 @@ body {
     margin: 0 auto;
     padding: 1.5em;
     background-color: var(--branco);
+  }
+
+  .linha {
+    border: 1px solid var(--cor-principal);
+    margin: .5em 0;
+  }
+
+  .sessao{
+    padding-top: 2em;
   }
 
   .experience,
