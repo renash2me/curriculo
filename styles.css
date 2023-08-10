@@ -1,0 +1,68 @@
+@import url("./reset.css");
+@import url("./cabecalho.css");
+
+:root {
+    --fonte-principal: 'Noto Serif', serif;
+
+    --cor-principal: #1d1c1d;
+    --cor-destaque: #0080ad;
+    --cor-secundaria: #3a383a;
+    --branco: #ffffff;
+
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    font-size: 16px;
+    background-color: azure;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5em;
+    background-color: var(--branco);
+  }
+
+  .experience,
+  .education,
+  .skills {
+    margin-bottom: 1.5em;
+  }
+  
+  .print-button {
+    display: block;
+    margin-top: 1.5em;
+    border: 0;
+    border-radius: .5em;
+    padding: 1em;
+    background-color: var(--cor-destaque);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+
+
+  /* Estilos para a versão impressa */
+  @media print {
+    .print-button {
+      display: none;
+    }
+  
+    @page {
+      margin: 0;
+      size: A4 portrait;
+      counter-increment: page;
+      @top-center {
+        content: "Página " counter(page);
+      }
+    }
+  
+    body {
+      margin: 2cm;
+    }
+  }
+  

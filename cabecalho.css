@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 0;
+  }
+
+  .cabecalho__nome {
+    width: 90%;
+    padding: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .cabecalho__profissao {
+    width: 100%;
+    padding: 0;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: .1em;
+    color: var(--cor-destaque);
+  }
+  
+  .cabecalho__informacoes {
+    display: flex;
+    color: var(--cor-secundaria);
+    align-items: start;
+    width: 50%;
+    height: 400px;
+    background-color: blueviolet;
+  }
