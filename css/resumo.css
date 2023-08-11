@@ -1,8 +1,14 @@
 .resumo {
     padding-top: 2em;
+    font-weight: 600;
 }
 
-.titulo_sessao {
-    font-size: 30px;
+.resumo__texto {
+    padding: 1.5em 0;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.titulo__resumo {
     color: var(--cor-secundaria);
 }

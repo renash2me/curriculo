@@ -1,78 +1,79 @@
 @import url("./reset.css");
 @import url("./cabecalho.css");
 @import url("./resumo.css");
+@import url("./sessao.css");
 
 :root {
-    --fonte-principal: 'Noto Serif', serif;
+  --fonte-principal: "Rockwell";
+  --fonte-secundaria: "Calibri";
 
-    --cor-principal: #1d1c1d;
-    --cor-destaque: #0080ad;
-    --cor-secundaria: #3a383a;
-    --branco: #ffffff;
-
+  --cor-principal: #555555;
+  --cor-secundaria: #1d1c1d;
+  --cor-destaque: #0080ad;
+  --branco: #ffffff;
 }
 
 body {
-    font-family: var(--fonte-principal);
-    color: var(--cor-principal);
-    font-size: 12px;
-    background-color: azure;
+  font-family: var(--fonte-principal);
+  color: var(--cor-principal);
+  font-size: 12px;
+  background-color: azure;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.5em;
-    background-color: var(--branco);
-  }
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.5em;
+  background-color: var(--branco);
+}
 
-  .linha {
-    border: 1px solid var(--cor-principal);
-    margin: .5em 0;
-  }
+.linha {
+  border: 1px solid var(--cor-secundaria);
+  margin: .5em 0;
+}
 
-  .sessao{
-    padding-top: 2em;
-  }
+.impresso {
+  width: 100%;
+  justify-content: space-between;
+}
 
-  .experience,
-  .education,
-  .skills {
-    margin-bottom: 1.5em;
-  }
+.print-button {
+  display: block;
+  margin-top: 1.5em;
+  border: 0;
+  border-radius: .5em;
+  padding: 1em;
+  background-color: var(--cor-destaque);
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-weight: 600;
+  font-size: 16px;
   
+}
+  
+
+
+/* Estilos para a versão impressa */
+@media print {
   .print-button {
-    display: block;
-    margin-top: 1.5em;
-    border: 0;
-    border-radius: .5em;
-    padding: 1em;
-    background-color: var(--cor-destaque);
-    color: var(--branco);
-    font-family: var(--fonte-principal);
-    font-weight: 600;
-    font-size: 16px;
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  @page {
+    margin: 0;
+    size: A4 portrait;
+    counter-increment: page;
+    @top-center {
+      content: "Página " counter(page);
+    }
   }
   
-
-
-  /* Estilos para a versão impressa */
-  @media print {
-    .print-button {
-      display: none;
-    }
-  
-    @page {
-      margin: 0;
-      size: A4 portrait;
-      counter-increment: page;
-      @top-center {
-        content: "Página " counter(page);
-      }
-    }
-  
-    body {
-      margin: 2cm;
-    }
+  body {
+    margin: 2cm;
   }
+}
   

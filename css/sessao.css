@@ -1,0 +1,58 @@
+
+.sessao {
+    padding: 1em 0 0 0;
+}
+
+.titulo_sessao {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    padding: 0 0 1em 0;
+}
+
+.subtitulo_sessao {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    padding: 0 0 .5em 0;
+}
+
+.titulo__destaque {
+    color: var(--cor-destaque);
+}
+
+.lista__posicao {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.lista__sessao {
+    list-style-type: disc;
+    margin: 0 0 1em 1.5em;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.lista__sessao li::marker {
+    color: var(--cor-destaque);
+    font-size: 18px;
+}
+
+.lista__tarefas {
+    list-style-type: disc;
+    margin: 0 0 0 1.5em;
+    width: 100%;
+    line-height: 1.5;
+    padding-bottom: 2.5em;
+}
+
+.lista__tarefas li::marker {
+    color: var(--cor-secundaria);
+    font-size: 18px;
+}
+
+.data {
+    text-transform: uppercase;
+    padding: 0 0 .3em 0;
+}
