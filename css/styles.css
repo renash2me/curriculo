@@ -16,25 +16,20 @@
 body {
   font-family: var(--fonte-principal);
   color: var(--cor-principal);
-  font-size: 12px;
+  font-size: 16px;
   background-color: azure;
 }
 
 .container {
   width: 70%;
   margin: 0 auto;
-  padding: 1.5em;
+  padding: 1.5em 5em;
   background-color: var(--branco);
 }
 
-.linha {
-  border: 1px solid var(--cor-secundaria);
-  margin: .5em 0;
-}
-
 .impresso {
-  width: 100%;
-  justify-content: space-between;
+display: flex;
+justify-content: space-around;
 }
 
 .print-button {
@@ -63,8 +58,13 @@ body {
     width: 100%;
   }
 
+  .page-break {
+    page-break-before: always; /* Quebra de página antes do elemento */
+    /* Ou use page-break-after: always para quebrar depois do elemento */
+  }
+
   @page {
-    margin: 0;
+    margin: 1.5cm 2cm 1.5cm 0;
     size: A4 portrait;
     counter-increment: page;
     @top-center {
@@ -73,7 +73,8 @@ body {
   }
   
   body {
-    margin: 2cm;
+    margin: 0 2cm 0 0;
+    font-size: 14px;
   }
 }
   
